@@ -1,0 +1,71 @@
+.tweet {
+	width: 88%;
+	margin: 7px 20px 7px 60px;
+	padding: 0px 5px 3px 5px;
+	cursor: pointer;
+	position: relative;
+	/*box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.25);*/
+}
+
+.tweet img {
+	left: -55px;
+	position: absolute;
+	top: 0;
+}
+
+.tweet p {
+	display: block;
+	clear: both;
+	margin: 5px 3px;
+	font-size: 13px;
+}
+
+.tweet label {
+	margin-top: -3px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #BDBDBD;
+	cursor: pointer;
+}
+
+.tweet .tweet-user {
+	display: block;
+	float: left;
+	margin-left: 3px;
+	margin-bottom: 5px;
+}
+
+.tweet .tweet-user span a, p.tweet-text a {
+	font-size: 12px;
+	color: #bdbdbd;
+	text-decoration: none;
+}
+
+p.tweet-text a {
+	font-size: 12px;
+	color: #7b7b7b;
+	text-decoration: none;
+}
+
+.tweet-user span a:hover, p.tweet-text a:hover {
+	text-decoration: none;
+}
+
+.tweet .tweet-timestamp {
+	display: block;
+	float: right;
+	margin-right: 3px;
+	text-align: right;
+	font-size: 11px !important;
+}
+
+.tweet-user-list {
+	display: block;
+	width: 100%;
+	list-style: none;
+}
+
+.tweet-user-list li {
+	display: block;
+	text-align: center;
+}
