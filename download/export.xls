@@ -1,0 +1,104 @@
+                <html xmlns:o="urn:schemas-microsoft-com:office:office"
+                xmlns:x="urn:schemas-microsoft-com:office:excel"
+                xmlns="http://www.w3.org/TR/REC-html40">
+
+                <head>
+                <meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+                <meta name=ProgId content=Excel.Sheet>
+                <!--[if gte mso 9]><xml>
+                 <o:DocumentProperties>
+                  <o:LastAuthor>Sriram</o:LastAuthor>
+                  <o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+                  <o:Version>10.2625</o:Version>
+                 </o:DocumentProperties>
+                 <o:OfficeDocumentSettings>
+                  <o:DownloadComponents/>
+                 </o:OfficeDocumentSettings>
+                </xml><![endif]-->
+                <style>
+                <!--table
+                    {mso-displayed-decimal-separator:"\.";
+                    mso-displayed-thousand-separator:"\,";}
+                @page
+                    {margin:1.0in .75in 1.0in .75in;
+                    mso-header-margin:.5in;
+                    mso-footer-margin:.5in;}
+                tr
+                    {mso-height-source:auto;}
+                col
+                    {mso-width-source:auto;}
+                br
+                    {mso-data-placement:same-cell;}
+                .style0
+                    {mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    white-space:nowrap;
+                    mso-rotate:0;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    border:none;
+                    mso-protection:locked visible;
+                    mso-style-name:Normal;
+                    mso-style-id:0;}
+                td
+                    {mso-style-parent:style0;
+                    padding-top:1px;
+                    padding-right:1px;
+                    padding-left:1px;
+                    mso-ignore:padding;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    border:none;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    mso-protection:locked visible;
+                    white-space:nowrap;
+                    mso-rotate:0;}
+                .xl24
+                    {mso-style-parent:style0;
+                    white-space:normal;}
+                -->
+                </style>
+                <!--[if gte mso 9]><xml>
+                 <x:ExcelWorkbook>
+                  <x:ExcelWorksheets>
+                   <x:ExcelWorksheet>
+                    <x:Name>Tweet</x:Name>
+                    <x:WorksheetOptions>
+                     <x:Selected/>
+                     <x:ProtectContents>False</x:ProtectContents>
+                     <x:ProtectObjects>False</x:ProtectObjects>
+                     <x:ProtectScenarios>False</x:ProtectScenarios>
+                    </x:WorksheetOptions>
+                   </x:ExcelWorksheet>
+                  </x:ExcelWorksheets>
+                  <x:WindowHeight>10005</x:WindowHeight>
+                  <x:WindowWidth>10005</x:WindowWidth>
+                  <x:WindowTopX>120</x:WindowTopX>
+                  <x:WindowTopY>135</x:WindowTopY>
+                  <x:ProtectStructure>False</x:ProtectStructure>
+                  <x:ProtectWindows>False</x:ProtectWindows>
+                 </x:ExcelWorkbook>
+                </xml><![endif]-->
+                </head>
+
+                <body link=blue vlink=purple>
+                <table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >id_str</td><td class=xl24 width=64 >created_at</td><td class=xl24 width=64 >text</td><td class=xl24 width=64 >name</td><td class=xl24 width=64 >screen_name</td><td class=xl24 width=64 >profile_image_url</td></tr><tr><td class=xl24 width=64 >'416688712744177664'</td><td class=xl24 width=64 >Fri Dec 27 21:55:05 +0000 2013</td><td class=xl24 width=64 >India, US ink $1bn deal for 6 more Super Hercules http://t.co/LHjOXw7n3L</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416682468935467008'</td><td class=xl24 width=64 >Fri Dec 27 21:30:16 +0000 2013</td><td class=xl24 width=64 >Perfection.. http://t.co/qQ9BUThibd</td><td class=xl24 width=64 >PRIYANKA </td><td class=xl24 width=64 >priyankachopra</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000107830642/7bdff7c6388f8d0b77737460d520792e_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416682421460148225'</td><td class=xl24 width=64 >Fri Dec 27 21:30:05 +0000 2013</td><td class=xl24 width=64 >Twitterati feels Deora speaks, Rahul follows http://t.co/MST1RzTX9d</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416676130981429248'</td><td class=xl24 width=64 >Fri Dec 27 21:05:05 +0000 2013</td><td class=xl24 width=64 >2nd Test: Fiery Steyn smokes India out of comfort zone http://t.co/wJiYBvzum9</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416674870253342720'</td><td class=xl24 width=64 >Fri Dec 27 21:00:05 +0000 2013</td><td class=xl24 width=64 >Under fire, Akhilesh to shift riot victims to govt houses http://t.co/aK7OcJHHaZ</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416673612796805120'</td><td class=xl24 width=64 >Fri Dec 27 20:55:05 +0000 2013</td><td class=xl24 width=64 >Actress dons saffron post controversy, now Ma Anandmayi http://t.co/T3hWCvPTP9</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416673148965093376'</td><td class=xl24 width=64 >Fri Dec 27 20:53:14 +0000 2013</td><td class=xl24 width=64 >T 1335 - HELLO DUBAI ... LOVE YOU !! http://t.co/FvRDCKiBsC</td><td class=xl24 width=64 >Amitabh Bachchan</td><td class=xl24 width=64 >SrBachchan</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/2227330575/Amitji_normal.png</td></tr><tr><td class=xl24 width=64 >'416671421100601344'</td><td class=xl24 width=64 >Fri Dec 27 20:46:22 +0000 2013</td><td class=xl24 width=64 >This train crosses this railway line at 2AM in Gondal and wakes me up every night. #gujaratstories</td><td class=xl24 width=64 >Ayushmann Khurrana</td><td class=xl24 width=64 >ayushmannk</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000187787150/6764d662384673eed624c473f5a0e5ed_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416670065262870528'</td><td class=xl24 width=64 >Fri Dec 27 20:40:59 +0000 2013</td><td class=xl24 width=64 >My anchor.. Thank u bhaiya.. @irfan525 http://t.co/avqkdDn0Eh</td><td class=xl24 width=64 >PRIYANKA </td><td class=xl24 width=64 >priyankachopra</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000107830642/7bdff7c6388f8d0b77737460d520792e_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416669843254177792'</td><td class=xl24 width=64 >Fri Dec 27 20:40:06 +0000 2013</td><td class=xl24 width=64 >World Parsi meet is fertile ground for match-making http://t.co/nmdgRMAnKQ</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416667760282710017'</td><td class=xl24 width=64 >Fri Dec 27 20:31:50 +0000 2013</td><td class=xl24 width=64 >OFA is being built by people like you. Say you're in—chip in $5. http://t.co/FviIvFAlbA http://t.co/GRENygMglV</td><td class=xl24 width=64 >Barack Obama</td><td class=xl24 width=64 >BarackObama</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000607588261/dad9f009a228a78a14f1f4bed0c54f76_normal.png</td></tr><tr><td class=xl24 width=64 >'416659773808185344'</td><td class=xl24 width=64 >Fri Dec 27 20:00:05 +0000 2013</td><td class=xl24 width=64 >Rahul slams Maharashtra govt over Adarsh report  http://t.co/HrGlsETd6K</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416658622220107777'</td><td class=xl24 width=64 >Fri Dec 27 19:55:31 +0000 2013</td><td class=xl24 width=64 >I love these 9 pictures that tell the history of #polio: http://t.co/0jWmFd9H3E http://t.co/CCCNf3ZxJY</td><td class=xl24 width=64 >Bill Gates</td><td class=xl24 width=64 >BillGates</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/1884069342/BGtwitter_normal.JPG</td></tr><tr><td class=xl24 width=64 >'416658512522268672'</td><td class=xl24 width=64 >Fri Dec 27 19:55:05 +0000 2013</td><td class=xl24 width=64 >Gujarat riots shook me to the core: Remorseful Modi http://t.co/vSw4vTqakM</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'416657890783404032'</td><td class=xl24 width=64 >Fri Dec 27 19:52:36 +0000 2013</td><td class=xl24 width=64 >T 1335 -Strange is it not .. when you visit another country you are the best behaved, neatest. Land in at home and its back to littering !</td><td class=xl24 width=64 >Amitabh Bachchan</td><td class=xl24 width=64 >SrBachchan</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/2227330575/Amitji_normal.png</td></tr></table></body></html>

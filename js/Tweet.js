@@ -247,6 +247,15 @@ var Tweet = (function (self) {
     	 document.location.href = 'generate_tweets_csv.php';
     	 TweetUI.hideLoader();
     };
+    
+    /**
+     * Generates a xls file with the current tweets visible
+     *
+     */
+    self.exportXlsTweets = function () {
+    	 document.location.href= 'generate_tweets_xls.php';
+    	 TweetUI.hideLoader();
+    };
 	
 
     /**

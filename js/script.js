@@ -130,6 +130,11 @@ $(document).ready(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportCsvTweets();
     });
+    
+    $('#export-xls').click(function () {
+        TweetUI.showLoader(); //show loading animation
+        Tweet.exportXlsTweets();
+    });
 
     //filter followers as the user types in the search box
     filterEl.on("keyup", function () {

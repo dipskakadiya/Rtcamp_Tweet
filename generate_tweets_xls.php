@@ -22,7 +22,7 @@ $tweets = $twitteroauth -> get("https://api.twitter.com/1.1/statuses/home_timeli
 
  include("lib/excel.php");
     
-    $excel=new ExcelWriter('php://memory');
+    $excel=new ExcelWriter("download/export.xls");
     
     if($excel==false)    
         echo $excel->error;
@@ -42,6 +42,5 @@ $tweets = $twitteroauth -> get("https://api.twitter.com/1.1/statuses/home_timeli
     $excel->close();
     echo "data is write into myXls.xls Successfully.";
 
-	//header("location:myXls.xls");
-	//unlink("myXls.xls");
+	header("location:download/export.xls");
 ?>

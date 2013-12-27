@@ -69,7 +69,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 						<a href="#" style="width: 100%;" class="button radius" data-dropdown="drop1">Download</a>
 						<ul id="drop1" class="f-dropdown" style="" data-dropdown-content>
 						  <li><a id="export-csv">CSV</a></li>
-						  <li><a href="#">XLS</a></li>
+						  <li><a id="export-xls">XLS</a></li>
 						  <li><a href="#">Google-Spreadhseet</a></li>
 						  <li><a href="#">PDF</a></li>
 						  <li><a href="#">XML</a></li>
