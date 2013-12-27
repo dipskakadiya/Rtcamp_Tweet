@@ -61,11 +61,16 @@ p.tweet-text a {
 
 .tweet-user-list {
 	display: block;
-	width: 100%;
+	margin-left:0 rem;
 	list-style: none;
 }
 
 .tweet-user-list li {
 	display: block;
 	text-align: center;
+}
+
+.banner{
+	height: 250px;
+	width: 100%;
 }

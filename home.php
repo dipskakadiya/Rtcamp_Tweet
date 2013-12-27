@@ -17,8 +17,8 @@ $twitteroauth = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['o
 $user_info = $twitteroauth -> get('account/verify_credentials');
 
 if (isset($user_info -> errors) && $user_info -> errors[0] -> message == 'Rate limit exceeded') {
-	echo "<script>alert('Twetter auth Error: Rate limit exceeded'); </script>Go to Login Page click <a href='clearsession.php'>here</a>";
-	exit ;
+	//echo "<script>alert('Twetter auth Error: Rate limit exceeded'); </script>Go to Login Page click <a href='clearsession.php'>here</a>";
+	//exit ;
 }
 
 //get the followers list
@@ -65,16 +65,82 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 						<a href="clearsession.php" id="logout" class="small button">Logout</a> 
 					</div>
 				</div>
-				<div class="panel radius callout" style="text-align: center">
-					<strong><?php echo $user_info -> friends_count; ?></strong> Following
+				
+				<!-- Search Bar -->
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="radius panel">
+							<div class="row">
+								<div class="columns">
+									<input type="text" placeholder="Search followers" id="filter" />
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="panel radius callout" style="text-align: center">
-					<strong><?php echo $user_info -> followers_count; ?></strong> Followers
+				<!-- End Search Bar -->
+
+				<!-- Thumbnails -->
+				<div class="row" style="height: 400px; width:100%; overflow-y:scroll; margin-bottom: 10px;">
+					<ul class="tweet-user-list" >
+                        <?php 
+							if($friend_list->users)
+							{
+								foreach ($friend_list->users as $friends) { ?>
+								<li>
+									<a href="javascript:void(0)" id="<?php echo $friends->screen_name?>" class="followers" >
+									<div class="large-12" style="position: relative;padding-left: 0.9375rem;padding-right: 0.9375rem;float: left;">
+										<img src="<?php echo $friends->profile_image_url?>" alt="profile image" >
+										<div class="panel">
+											<span class="user-title"><?php echo $friends->name?></span>
+											<p class="user-desc">@<span class="screen-name"><?php echo $friends->screen_name?></span></p>
+										</div>
+									</div>
+									</a>
+								</li>
+                        <?php }
+									}
+						 ?>
+                        </ul>
 				</div>
+				<!-- End Thumbnails -->
+				
+				
 			</div>
 
 			<div class="large-9 columns">
-				<div class="row tweet-thread" style="height: 300px; width:100%; overflow-y:scroll; margin-bottom: 10px;">
+				
+					<img class="banner" src="<?php echo $user_info->profile_banner_url?>/web">
+				
+					<div class="large-4 panel radius callout column" style="text-align: center; margin: 10px;padding: 10px">
+						<strong><?php echo $user_info -> friends_count; ?></strong> Following
+					</div>
+					<div class="large-4 panel radius callout column" style="text-align: center; margin: 10px;padding: 10px">
+						<strong><?php echo $user_info -> followers_count; ?></strong> Followers
+					</div>
+					<div class="large-3 panel radius callout column" style="text-align: center; margin: 10px;padding: 10px">
+						<strong><?php echo $user_info -> statuses_count; ?></strong> Tweets
+					</div>
+				
+				<!-- Tweet Bar -->
+				<div class="row">
+					<div class="large-12 columns">
+						<div class="radius panel">
+							<div class="row">
+								<div class="large-10 column">
+									<textarea cols="20" rows="1" id="status" placeholder="Tweet something..... max 140 characters" maxlength="140" ></textarea>
+								</div>
+								<div class="large-2 columns">
+									<button class="small" id="update-status">Tweet</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Tweet Bar -->
+
+				
+				<div class="tweet-thread" style="height: 475px; width:100%; overflow-y:scroll; margin-bottom: 10px;">
 					<div id="loading-overlay">
                          <img src="images/loading.gif" alt='loading'>
                     </div><!--//#loading-overlay-->
@@ -115,45 +181,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
                          </script>
 					</div>
 				</div>
-
-				<!-- Search Bar -->
-				<div class="row">
-					<div class="large-12 columns">
-						<div class="radius panel">
-							<div class="row">
-								<div class="columns">
-									<input type="text" placeholder="Search followers" id="filter" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Search Bar -->
-
-				<!-- Thumbnails -->
-				<div class="row">
-					<ul class="tweet-user-list">
-                        <?php 
-							if($friend_list->users)
-							{
-								foreach ($friend_list->users as $friends) { ?>
-								<li>
-									<a href="javascript:void(0)" id="<?php echo $friends->screen_name?>" class="followers" >
-									<div class="large-4 small-6" style="position: relative;padding-left: 0.9375rem;padding-right: 0.9375rem;float: left;">
-										<img src="<?php echo $friends->profile_image_url?>" alt="profile image" >
-										<div class="panel">
-											<span class="user-title"><?php echo $friends->name?></span>
-											<p class="user-desc">@<span class="screen-name"><?php echo $friends->screen_name?></span></p>
-										</div>
-									</div>
-									</a>
-								</li>
-                        <?php }
-							}
-						 ?>
-                        </ul>
-				</div>
-				<!-- End Thumbnails -->
+				
 			</div>
 		</div>
 
@@ -217,8 +245,8 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 		
 		<div id="notification">
 			<div id="notification-msg"></div>
-		</div><!--//.notification-->
-		
+		</div><!--//.notification--><pre>
+		<?php print_r($user_info);?></pre>
 		<!--script src="js/jquery.js"></script-->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.8.1.min.js"><\/script>')</script>
