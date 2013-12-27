@@ -239,6 +239,16 @@ var Tweet = (function (self) {
         });
     };
 
+	/**
+     * Generates a csv file with the current tweets visible
+     *
+     */
+    self.exportCsvTweets = function () {
+    	 document.location.href = 'generate_tweets_csv.php';
+    	 TweetUI.hideLoader();
+    };
+	
+
     /**
      * Generates a pdf file with the current tweets visible and prompts the user to download
      *
