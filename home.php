@@ -55,14 +55,26 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 				</div>
 				<hr>
 				<div class="row">
-					<div class="large-4 columns">
-						<a href="javascript:void(0)" id="home" class="small button">Home</a>
-					</div>
-					<div class="large-4 columns">
-						<a href="javascript:void(0)" id="my-tweets" class="small button">MyTweet</a>
-					</div>
-					<div class="large-4 columns">
-						<a href="clearsession.php" id="logout" class="small button">Logout</a> 
+					<div class="button-bar">
+					  <ul class="button-group radius" style="width: 100%;">
+					    <li><a href="javascript:void(0)" style="font-size: 13px;" id="home" class="button tiny">Home</a></li>
+					    <li><a href="javascript:void(0)" style="font-size: 13px;" id="my-tweets" class="button tiny">MyTweet</a></li>
+					    <li><a href="clearsession.php" style="font-size: 13px;" id="logout" class="button tiny">Logout</a></li>
+					  </ul>
+					 </div>
+				</div>
+				
+				<div class="row">
+					<div class="large-12">
+						<a href="#" style="width: 100%;" class="button radius" data-dropdown="drop1">Download</a>
+						<ul id="drop1" class="f-dropdown" style="" data-dropdown-content>
+						  <li><a href="#">CSV</a></li>
+						  <li><a href="#">XLS</a></li>
+						  <li><a href="#">Google-Spreadhseet</a></li>
+						  <li><a href="#">PDF</a></li>
+						  <li><a href="#">XML</a></li>
+						  <li><a href="#">JSON</a></li>
+						</ul>
 					</div>
 				</div>
 				
@@ -245,8 +257,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 		
 		<div id="notification">
 			<div id="notification-msg"></div>
-		</div><!--//.notification--><pre>
-		<?php print_r($user_info);?></pre>
+		</div><!--//.notification-->
 		<!--script src="js/jquery.js"></script-->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.8.1.min.js"><\/script>')</script>
@@ -259,6 +270,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 		<script type="text/javascript" src="js/TweetUI.js"></script>     
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/strings.js"></script>
+		<script type="text/javascript" src="js/foundation.dropdown.js"></script>
 		<script>
 			$(document).foundation();
 			var doc = document.documentElement;

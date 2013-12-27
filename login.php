@@ -13,7 +13,7 @@ $_SESSION['oauth_token'] = $request_token['oauth_token'];
 $_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
 
 //delete before uploading
-print_r($request_token );
+//print_r($request_token );
 
 switch ($connection->http_code) {
     case 200:

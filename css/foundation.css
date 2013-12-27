@@ -1897,7 +1897,7 @@ button, .button {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.25rem;
   position: relative;
   text-decoration: none;
   text-align: center;
@@ -1963,9 +1963,9 @@ button, .button {
     /*     @else                            { font-size: $padding - rem-calc(2); } */ }
   button.tiny, .button.tiny {
     padding-top: 0.625rem;
-    padding-right: 1.25rem;
+    padding-right: 1.40rem;
     padding-bottom: 0.6875rem;
-    padding-left: 1.25rem;
+    padding-left: 1.39rem;
     font-size: 0.6875rem;
     /*     @else                            { font-size: $padding - rem-calc(2); } */ }
   button.expand, .button.expand {
@@ -4081,7 +4081,7 @@ ul.off-canvas-list {
   font-size: 16px;
   z-index: 99;
   margin-top: 2px;
-  max-width: 200px; }
+  /*max-width: 200px;*/ }
   .f-dropdown > *:first-child {
     margin-top: 0; }
   .f-dropdown > *:last-child {
@@ -4419,7 +4419,7 @@ textarea {
   color: rgba(0, 0, 0, 0.75);
   display: block;
   font-size: 0.875rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.20rem 0;
   padding: 0.5rem;
   height: 2.3125rem;
   width: 100%;
@@ -4485,7 +4485,7 @@ input[type="file"],
 input[type="checkbox"],
 input[type="radio"],
 select {
-  margin: 0 0 1rem 0; }
+  margin: 0 0 0.20rem 0; }
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
