@@ -29,7 +29,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 	<head>
-		<title>Foundation Template | Realty</title>
+		<title>TweetyFly</title>
 		<link rel="stylesheet" href="css/foundation.css" />
 		<link rel="stylesheet" href="css/modal.css">
 		<link rel="stylesheet" href="css/style.css">

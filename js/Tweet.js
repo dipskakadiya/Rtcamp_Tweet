@@ -262,7 +262,7 @@ var Tweet = (function (self) {
      *
      */
     self.exportGxlsTweets = function () {
-    	 document.location.href= 'generate_tweets_GSpreadhseet.php';
+    	 document.location.href= 'generate_tweets_GSpreadsheet.php';
     	 TweetUI.hideLoader();
     };
 	

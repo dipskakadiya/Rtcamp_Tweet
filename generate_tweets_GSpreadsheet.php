@@ -40,7 +40,7 @@ require_once 'lib/google-api-php-client/src/contrib/Google_DriveService.php';
 $client = new Google_Client();
 $client -> setClientId("828657041989-u131fg93ems3g5dtip9qfmj4vfi3j8kk.apps.googleusercontent.com");
 $client -> setClientSecret('F64SW-3Gf0QkwbxufsBINJQC');
-$client -> setRedirectUri('http://127.0.0.1/Rtcamp_Tweet/generate_tweets_GSpreadhseet.php');
+$client -> setRedirectUri('http://127.0.0.1/Rtcamp_Tweet/generate_tweets_GSpreadsheet.php');
 $client -> setScopes(array('https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/userinfo.profile'));
 $client -> setUseObjects(true);
 
@@ -66,8 +66,8 @@ try {
       'convert' => true
     ));
 	echo "File Was Successfully Created. File ID: ".$createdFile->id;
+	header("location:timeline#home");
 } catch (Exception $ex) {
 	echo $ex;
 }
-header("Location: timeline#home");
 ?>
