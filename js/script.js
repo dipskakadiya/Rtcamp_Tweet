@@ -147,6 +147,12 @@ $(document).ready(function () {
         Tweet.exportXmlTweets();
 
     });
+    
+    $('#export-json').click(function () {
+        TweetUI.showLoader(); //show loading animation
+        Tweet.exportJsonTweets();
+
+    });
 
     //filter followers as the user types in the search box
     filterEl.on("keyup", function () {

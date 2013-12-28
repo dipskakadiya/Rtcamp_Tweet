@@ -290,11 +290,20 @@ var Tweet = (function (self) {
     };
     
     /**
-     * Generates a xls file with the current tweets visible
+     * Generates a xml file with the current tweets visible
      *
      */
     self.exportXmlTweets = function () {
     	 document.location.href= 'generate_tweets_xml.php';
+    	 TweetUI.hideLoader();
+    };
+    
+    /**
+     * Generates a json file with the current tweets visible
+     *
+     */
+    self.exportJsonTweets = function () {
+    	 document.location.href= 'generate_tweets_json.php';
     	 TweetUI.hideLoader();
     };
 
