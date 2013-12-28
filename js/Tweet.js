@@ -262,7 +262,7 @@ var Tweet = (function (self) {
      * Generates a pdf file with the current tweets visible and prompts the user to download
      *
      */
-    self.downloadTweets = function () {
+    self.exportPdfTweets = function () {
         var content = $('#tweets').html();
         $.ajax({
             type: 'POST',

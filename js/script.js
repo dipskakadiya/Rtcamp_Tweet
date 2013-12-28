@@ -135,6 +135,12 @@ $(document).ready(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportXlsTweets();
     });
+    
+    $('#export-pdf').click(function () {
+        TweetUI.showLoader(); //show loading animation
+        Tweet.exportPdfTweets();
+
+    });
 
     //filter followers as the user types in the search box
     filterEl.on("keyup", function () {
