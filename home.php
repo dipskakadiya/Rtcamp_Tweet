@@ -93,7 +93,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 				<!-- End Search Bar -->
 
 				<!-- Thumbnails -->
-				<div class="row" style="height: 400px; width:100%; overflow-y:scroll; margin-bottom: 10px;">
+				<div class="row" style="height: 440px; width:100%; overflow-y:scroll; margin-bottom: 10px;">
 					<ul class="tweet-user-list" >
                         <?php 
 							if($friend_list->users)
@@ -137,8 +137,11 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 				<!-- Tweet Bar -->
 				<div class="row">
 					<div class="large-12 columns">
-						<div class="radius panel">
-							<div class="row">
+						<div class="radius panel" style="height: 130px">
+							<div id="notification" data-alert class="alert-box info radius" style="display: none;">
+							  <div id="notification-msg"></div>
+							</div>
+							<div class="row" id="Tweetbar" style="margin-top: 30px;">
 								<div class="large-10 column">
 									<textarea cols="20" rows="1" id="status" placeholder="Tweet something..... max 140 characters" maxlength="140" ></textarea>
 								</div>
@@ -154,7 +157,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 				
 				<div class="tweet-thread" style="height: 475px; width:100%; overflow-y:scroll; margin-bottom: 10px;">
 					<div id="loading-overlay">
-                         <img src="images/loading.gif" alt='loading'>
+                         <img width="100%" src="images/loading.gif" alt='loading'>
                     </div><!--//#loading-overlay-->
 					<div class="large-12 columns" id="tweets">
 						<script id="tweet-template" type="text/x-handlebars-template">
@@ -201,29 +204,6 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 		<footer class="row">
 			<div class="large-12 columns">
 				<hr />
-				<div class="row">
-					<div class="large-6 columns">
-						<p>
-							&copy; Copyright no one at all. Go to town.
-						</p>
-					</div>
-					<div class="large-6 columns">
-						<ul class="inline-list right">
-							<li>
-								<a href="#">Link 1</a>
-							</li>
-							<li>
-								<a href="#">Link 2</a>
-							</li>
-							<li>
-								<a href="#">Link 3</a>
-							</li>
-							<li>
-								<a href="#">Link 4</a>
-							</li>
-						</ul>
-					</div>
-				</div>
 			</div>
 		</footer>
 		
@@ -255,9 +235,6 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 		    </div><!--//.modal-footer-->
 		</div><!--//#delete-modal-->
 		
-		<div id="notification">
-			<div id="notification-msg"></div>
-		</div><!--//.notification-->
 		<!--script src="js/jquery.js"></script-->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.8.1.min.js"><\/script>')</script>

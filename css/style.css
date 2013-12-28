@@ -61,7 +61,7 @@ p.tweet-text a {
 
 .tweet-user-list {
 	display: block;
-	margin-left:0 rem;
+	margin-left: 0 rem;
 	list-style: none;
 }
 
@@ -70,7 +70,9 @@ p.tweet-text a {
 	text-align: center;
 }
 
-.banner{
-	height: 250px;
+.banner {
+	height: 245px;
 	width: 100%;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 }

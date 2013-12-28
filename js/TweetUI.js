@@ -43,9 +43,13 @@ var TweetUI = (function (self) {
      * @param notification message to be shown
      */
     self.showPopup = function (message) {
+    	self.notificationEl.removeAttr("style");
+    	$("#Tweetbar").attr("style","margin-top:0px;");
         self.notificationEl.find('#notification-msg').text(message);
         self.notificationEl.fadeIn(self.config.speed);
         setTimeout(function () {
+        	self.notificationEl.attr("style","display:none;");
+    		$("#Tweetbar").attr("style","margin-top:30px;");
             self.notificationEl.fadeOut(self.config.speed);
         }, self.config.duration);
     };

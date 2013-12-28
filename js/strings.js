@@ -10,10 +10,7 @@ var strings = {
     errorFavoritingTweet: "Some error occured while favoriting the tweet. Please try again.",
     errorUnFavoritingTweet: "Some error occured while unfavoriting tweet. Please try again.",
     errorUpdatingStatus: "Some error occured while updating status. Please try again.",
-    
-    errorCreatingCsv: "Some error occured while creating csv. Please try again.",
     errorCreatingPdf: "Some error occured while creating pdf. Please try again.",
-    
     successUndoFavorite: "Undo favorite succesful",
 	successStatus : "Status updated successfully",
     successFavorite: "Status favorited succesfully ",

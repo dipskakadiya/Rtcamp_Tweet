@@ -14,7 +14,6 @@ $(document).ready(function () {
         //get the tweets of the username that is present in the URL hashtag
         Tweet.getUserTimeline(currentLocation);
     }
-
 });
 
 
@@ -125,34 +124,39 @@ $(document).ready(function () {
 
     });
 
-    //download tweets
+    //download tweets as csv file
     $('#export-csv').click(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportCsvTweets();
     });
     
+    //download tweets as xls file
     $('#export-xls').click(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportXlsTweets();
     });
     
+    //download tweets as google spreadsheet file
      $('#export-google').click(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportGxlsTweets();
     });
     
+    //download tweets as pdf file
     $('#export-pdf').click(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportPdfTweets();
 
     });
     
+    //download tweets as xml fiel
     $('#export-xml').click(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportXmlTweets();
 
     });
     
+    //download tweets as json fiel
     $('#export-json').click(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportJsonTweets();
