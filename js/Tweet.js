@@ -256,6 +256,15 @@ var Tweet = (function (self) {
     	 document.location.href= 'generate_tweets_xls.php';
     	 TweetUI.hideLoader();
     };
+    
+     /**
+     * Generates a Google spreadsheet file with the current tweets visible
+     *
+     */
+    self.exportGxlsTweets = function () {
+    	 document.location.href= 'generate_tweets_GSpreadhseet.php';
+    	 TweetUI.hideLoader();
+    };
 	
 
     /**

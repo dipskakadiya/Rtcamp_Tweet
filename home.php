@@ -42,7 +42,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 			<ul class="title-area">
 				<!-- Title Area -->
 				<li class="name">
-					<h1><a href="#"> Top Bar Title </a></h1>
+					<h1><a href="#" style="font-size: 20px;"> TweetyFly </a></h1>
 				</li>
 			</ul>
 		</nav>

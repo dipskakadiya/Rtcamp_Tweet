@@ -136,6 +136,11 @@ $(document).ready(function () {
         Tweet.exportXlsTweets();
     });
     
+     $('#export-google').click(function () {
+        TweetUI.showLoader(); //show loading animation
+        Tweet.exportGxlsTweets();
+    });
+    
     $('#export-pdf').click(function () {
         TweetUI.showLoader(); //show loading animation
         Tweet.exportPdfTweets();
