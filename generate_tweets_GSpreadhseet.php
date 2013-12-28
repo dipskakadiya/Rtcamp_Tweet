@@ -69,4 +69,5 @@ try {
 } catch (Exception $ex) {
 	echo $ex;
 }
+header("Location: timeline#home");
 ?>
