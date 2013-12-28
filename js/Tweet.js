@@ -273,7 +273,7 @@ var Tweet = (function (self) {
             success: function (data) {
                 if (data.status) {
                     TweetUI.hideLoader(); //hide the loading proces
-                    window.location = 'tweets.pdf'; //down the pdf file
+                    window.location = 'download/tweets.pdf'; //down the pdf file
                 } else {
                     TweetUI.hideLoader(); //hide the loading proces
                     TweetUI.showPopup(strings.errorCreatingPdf);
@@ -287,6 +287,15 @@ var Tweet = (function (self) {
                 TweetUI.showLoader(); // hide animation on success
             }
         });
+    };
+    
+    /**
+     * Generates a xls file with the current tweets visible
+     *
+     */
+    self.exportXmlTweets = function () {
+    	 document.location.href= 'generate_tweets_xml.php';
+    	 TweetUI.hideLoader();
     };
 
     /**

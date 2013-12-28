@@ -23,7 +23,7 @@ $html .= "
 $mpdf = new mPDF('c');
 $mpdf -> SetDisplayMode('fullpage');
 $mpdf -> WriteHTML($html);
-$mpdf -> Output("tweets.pdf", "F");
+$mpdf -> Output("download/tweets.pdf", "F");
 
 header('Content-type: application/json; charset=utf-8');
 echo json_encode(array('status' => 'false'));
