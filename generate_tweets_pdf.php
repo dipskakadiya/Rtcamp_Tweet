@@ -9,7 +9,7 @@ $html = "
 		<link rel='stylesheet' href='css/foundation.css' />
 		<link rel='stylesheet' href='css/style.css'/>
 		<body>
-			<h1 style='text-align: center;'><img src='images/Tweet.png' style='width:30px;height:30px;vertical-align:middle;margin-right:10px'>TweetyFlyApps</h1>
+			<h1 style='text-align: center;'><img src='images/logoimage.PNG' style='width:50px;height:50px;vertical-align:middle;margin-top:-10px'>TweetyFlyApps</h1>
 			<div class='tweet-thread'>";
 
 $html .= $data;

@@ -16,18 +16,14 @@ if (isset($_SESSION['access_token']) || isset($_SESSION['access_token']['oauth_t
 		<link rel="stylesheet" href="css/foundation.css" />
 		<link rel="stylesheet" href="css/docs.css" />
 		<script src="js/modernizr.js"></script>
+		<link rel="icon" type="img/ico" href="images/favicon.ico">
 	</head>
 	<body>
 		<div class="off-canvas-wrap docs-wrap" >
-			<div class="inner-wrap" style="height: 900px;">
-				<nav class="tab-bar">
-					<section class="left tab-bar-section">
-						<h1 class="title">Rtcamp-Tweet</h1>
-					</section>
-				</nav>
+			<div class="inner-wrap" >
 				<section class="main-section">
 					<div class="large-12 columns" style="margin-top: 100px;text-align: center">
-						<img  src="images/twitter.jpg" alt="Sign in with Twitter"/><center> <a href="login.php"><img src="images/login-twitter.png" alt="Sign in with Twitter"/></a></center>
+						<img  src="images/logo.PNG" alt="Sign in with Twitter"/><center> <a href="login.php"><img src="images/login-twitter.png" alt="Sign in with Twitter"/></a></center>
 					</div>
 				</section>
 			</div>

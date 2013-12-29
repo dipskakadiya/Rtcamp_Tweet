@@ -34,6 +34,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 		<link rel="stylesheet" href="css/modal.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/modernizr.js"></script>
+		<link rel="icon" type="img/ico" href="images/favicon.ico">
 	</head>
 	<body>
 
@@ -42,8 +43,8 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 			<ul class="title-area">
 				<!-- Title Area -->
 				<li class="name">
-					<h1><a href="#" style="font-size: 20px;"> TweetyFly </a></h1>
-				</li>
+					<h1><img style="height: 45px;" src="images/logosmall.png" /></h1>
+				</li> 
 			</ul>
 		</nav>
 		<!-- End Top Bar -->
