@@ -18,6 +18,11 @@ var strings = {
     successRetweet: "Status retweeted successfully",
     successDelete: "Status deleted succesfully",
     errorBlankStatus: "Please provide a status message",
-    errorMaxCharacters: "A tweet can be of maximum 140 characters only."
+   errorMaxCharacters: "A tweet can be of maximum 140 characters only.",
+    successCreatingCsv: "CSV file downloaded succesfully",
+    successCreatingXls: "XLS file downloaded succesfully",
+    successCreatingXml: "XML file downloaded succesfully",
+    successCreatingGoogle: "Google shreadsheet created succesfully in your Google drive.",
+    successCreatingJson: "JSON file downloaded succesfully"
 
 };

@@ -25,12 +25,12 @@ $apiConfig = array(
     'application_name' => '',
 
     // OAuth2 Settings, you can get these keys at https://code.google.com/apis/console
-    'oauth2_client_id' => '828657041989-u131fg93ems3g5dtip9qfmj4vfi3j8kk.apps.googleusercontent.com',
-    'oauth2_client_secret' => 'F64SW-3Gf0QkwbxufsBINJQC',
-    'oauth2_redirect_uri' => 'http://127.0.0.1/Rtcamp_Tweet/generate_tweets_GSpreadhseet.php',
+    'oauth2_client_id' => '',
+    'oauth2_client_secret' => '',
+    'oauth2_redirect_uri' => '',
 
     // The developer key, you get this at https://code.google.com/apis/console
-    'developer_key' => 'AIzaSyDBUJhLSdP2NplgAXM8vVHwcxVfPgnFdvQ',
+    'developer_key' => '',
   
     // Site name to show in the Google's OAuth 1 authentication screen.
     'site_name' => 'www.example.org',

@@ -65,11 +65,16 @@ foreach ($tweets as $line) {
 
 }
 
-echo $doc -> saveXML() . "\n";
 
-// tell the browser it's going to be a xml file
-header('Content-type: text/xml');
-// tell the browser we want to save it instead of displaying it
-header('Content-Disposition: attachement; filename="' . $filename . '"');
-
+ 	header('Content-Description: File Transfer');
+    header('Content-Type: application/octet-stream');
+    header('Content-Disposition: attachment; filename='.basename($filename));
+    header('Content-Transfer-Encoding: binary');
+    header('Expires: 0');
+    header('Cache-Control: must-revalidate');
+    header('Pragma: public');
+    header('Content-Length: ' . filesize($filename));
+    ob_clean();
+    flush();
+	echo $doc -> saveXML() . "\n";
 ?>

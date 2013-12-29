@@ -49,7 +49,7 @@ $friend_list = $twitteroauth -> get("https://api.twitter.com/1.1/followers/list.
 		<!-- End Top Bar -->
 		<div class="row">
 			<div class="large-3 panel columns">
-				<img height="500px" width="500px" src="<?php echo $user_info->profile_image_url?>">
+				<img height="500px" width="500px" src="<?php echo str_replace("_normal", "",$user_info->profile_image_url);?>">
 				<div class="panel" style="text-align: center">
 					<h6><?php echo $user_info->name?></h6>
 				</div>

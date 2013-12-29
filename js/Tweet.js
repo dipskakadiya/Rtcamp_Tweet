@@ -246,6 +246,7 @@ var Tweet = (function (self) {
     self.exportCsvTweets = function () {
     	 document.location.href = 'generate_tweets_csv.php';
     	 TweetUI.hideLoader();
+    	 TweetUI.showPopup(strings.successCreatingCsv);
     };
     
     /**
@@ -255,6 +256,7 @@ var Tweet = (function (self) {
     self.exportXlsTweets = function () {
     	 document.location.href= 'generate_tweets_xls.php';
     	 TweetUI.hideLoader();
+    	 TweetUI.showPopup(strings.successCreatingXls);
     };
     
      /**
@@ -264,6 +266,7 @@ var Tweet = (function (self) {
     self.exportGxlsTweets = function () {
     	 document.location.href= 'generate_tweets_GSpreadsheet.php';
     	 TweetUI.hideLoader();
+    	 TweetUI.showPopup(strings.successCreatingGoogle);
     };
 	
 
@@ -305,6 +308,7 @@ var Tweet = (function (self) {
     self.exportXmlTweets = function () {
     	 document.location.href= 'generate_tweets_xml.php';
     	 TweetUI.hideLoader();
+    	 TweetUI.showPopup(strings.successCreatingXml);
     };
     
     /**
@@ -314,6 +318,7 @@ var Tweet = (function (self) {
     self.exportJsonTweets = function () {
     	 document.location.href= 'generate_tweets_json.php';
     	 TweetUI.hideLoader();
+    	 TweetUI.showPopup(strings.successCreatingJson);
     };
 
     /**

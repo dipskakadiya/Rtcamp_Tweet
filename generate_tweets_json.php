@@ -35,11 +35,17 @@ foreach ($tweets as $line) {
 	$i++;
 }
 
-echo json_encode($jsonArray);
+	header('Content-Description: File Transfer');
+    header('Content-Type: application/octet-stream');
+    header('Content-Disposition: attachment; filename='.basename($filename));
+    header('Content-Transfer-Encoding: binary');
+    header('Expires: 0');
+    header('Cache-Control: must-revalidate');
+    header('Pragma: public');
+    header('Content-Length: ' . filesize($filename));
+    ob_clean();
+    flush();
 
-// tell the browser it's going to be a xml file
-header('Content-type: application/json');
-// tell the browser we want to save it instead of displaying it
-header('Content-Disposition: attachement; filename="' . $filename . '"');
+echo json_encode($jsonArray);
 
 ?>
