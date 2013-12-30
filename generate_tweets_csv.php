@@ -1,5 +1,6 @@
 <?php
 session_start();
+//Twitter authentication required file
 require_once ('lib/twitteroauth/twitteroauth.php');
 require_once ('config.php');
 

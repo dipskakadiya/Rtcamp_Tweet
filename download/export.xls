@@ -1,0 +1,104 @@
+                <html xmlns:o="urn:schemas-microsoft-com:office:office"
+                xmlns:x="urn:schemas-microsoft-com:office:excel"
+                xmlns="http://www.w3.org/TR/REC-html40">
+
+                <head>
+                <meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+                <meta name=ProgId content=Excel.Sheet>
+                <!--[if gte mso 9]><xml>
+                 <o:DocumentProperties>
+                  <o:LastAuthor>Sriram</o:LastAuthor>
+                  <o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+                  <o:Version>10.2625</o:Version>
+                 </o:DocumentProperties>
+                 <o:OfficeDocumentSettings>
+                  <o:DownloadComponents/>
+                 </o:OfficeDocumentSettings>
+                </xml><![endif]-->
+                <style>
+                <!--table
+                    {mso-displayed-decimal-separator:"\.";
+                    mso-displayed-thousand-separator:"\,";}
+                @page
+                    {margin:1.0in .75in 1.0in .75in;
+                    mso-header-margin:.5in;
+                    mso-footer-margin:.5in;}
+                tr
+                    {mso-height-source:auto;}
+                col
+                    {mso-width-source:auto;}
+                br
+                    {mso-data-placement:same-cell;}
+                .style0
+                    {mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    white-space:nowrap;
+                    mso-rotate:0;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    border:none;
+                    mso-protection:locked visible;
+                    mso-style-name:Normal;
+                    mso-style-id:0;}
+                td
+                    {mso-style-parent:style0;
+                    padding-top:1px;
+                    padding-right:1px;
+                    padding-left:1px;
+                    mso-ignore:padding;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    border:none;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    mso-protection:locked visible;
+                    white-space:nowrap;
+                    mso-rotate:0;}
+                .xl24
+                    {mso-style-parent:style0;
+                    white-space:normal;}
+                -->
+                </style>
+                <!--[if gte mso 9]><xml>
+                 <x:ExcelWorkbook>
+                  <x:ExcelWorksheets>
+                   <x:ExcelWorksheet>
+                    <x:Name>Tweet</x:Name>
+                    <x:WorksheetOptions>
+                     <x:Selected/>
+                     <x:ProtectContents>False</x:ProtectContents>
+                     <x:ProtectObjects>False</x:ProtectObjects>
+                     <x:ProtectScenarios>False</x:ProtectScenarios>
+                    </x:WorksheetOptions>
+                   </x:ExcelWorksheet>
+                  </x:ExcelWorksheets>
+                  <x:WindowHeight>10005</x:WindowHeight>
+                  <x:WindowWidth>10005</x:WindowWidth>
+                  <x:WindowTopX>120</x:WindowTopX>
+                  <x:WindowTopY>135</x:WindowTopY>
+                  <x:ProtectStructure>False</x:ProtectStructure>
+                  <x:ProtectWindows>False</x:ProtectWindows>
+                 </x:ExcelWorkbook>
+                </xml><![endif]-->
+                </head>
+
+                <body link=blue vlink=purple>
+                <table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >id_str</td><td class=xl24 width=64 >created_at</td><td class=xl24 width=64 >text</td><td class=xl24 width=64 >name</td><td class=xl24 width=64 >screen_name</td><td class=xl24 width=64 >profile_image_url</td></tr><tr><td class=xl24 width=64 >'417550672197070848'</td><td class=xl24 width=64 >Mon Dec 30 07:00:12 +0000 2013</td><td class=xl24 width=64 >#AAP will contest in #TamilNadu, Prashant Bhushan says http://t.co/k8qMc8DMDg</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417549680101572608'</td><td class=xl24 width=64 >Mon Dec 30 06:56:16 +0000 2013</td><td class=xl24 width=64 >Time to open presents with the folks! Belated christmas!!! http://t.co/IKsYWw92Du</td><td class=xl24 width=64 >Jacqueline Fernandez</td><td class=xl24 width=64 >Asli_Jacqueline</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/3635175701/75a842088180873b794724629943db24_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417549392481382400'</td><td class=xl24 width=64 >Mon Dec 30 06:55:07 +0000 2013</td><td class=xl24 width=64 >You can be fined for ‘slow speed’ in #Hyderabad http://t.co/vcpp1ARQho</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417548986480734208'</td><td class=xl24 width=64 >Mon Dec 30 06:53:30 +0000 2013</td><td class=xl24 width=64 >Watch Tere Naina from #JaiHo featuring @BeingSalmanKhan and Daisy Shah.- http://t.co/g3TylhWlyo :: http://t.co/JT3hyj8q12</td><td class=xl24 width=64 >Filmfare</td><td class=xl24 width=64 >filmfare</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/413179285596151808/FAbXzK8E_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417548182596640768'</td><td class=xl24 width=64 >Mon Dec 30 06:50:19 +0000 2013</td><td class=xl24 width=64 >Injured guard foils ATM heist in Bangalore, nabs one thief http://t.co/WOuO2n9xo6</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417548147213475840'</td><td class=xl24 width=64 >Mon Dec 30 06:50:10 +0000 2013</td><td class=xl24 width=64 >Despite ‘compromise’, Aston Martin driver can be tried http://t.co/PgTNvNOhMr</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417546950331101184'</td><td class=xl24 width=64 >Mon Dec 30 06:45:25 +0000 2013</td><td class=xl24 width=64 >Farooque Shaikh to be laid to rest in Andheri today http://t.co/5voB3GSJ3L</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417546910141255680'</td><td class=xl24 width=64 >Mon Dec 30 06:45:15 +0000 2013</td><td class=xl24 width=64 >After a call from Rajnath Singh, Yeddyurappa says he will join BJP  http://t.co/CZbNVa2yb4</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417545608434814976'</td><td class=xl24 width=64 >Mon Dec 30 06:40:05 +0000 2013</td><td class=xl24 width=64 >We'll appeal against clean chit to Modi: Teesta Setalvad http://t.co/u1mKn7zVsS</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417545378251026433'</td><td class=xl24 width=64 >Mon Dec 30 06:39:10 +0000 2013</td><td class=xl24 width=64 >RT @kanikamaheshwa_: Shooting for the next episode of #NachBaliye, we came up with this act in just one day hope everyone likes it :) @Star…</td><td class=xl24 width=64 >STAR Plus</td><td class=xl24 width=64 >StarPlus</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/2424887382/i5wwae659zjg0tf40e05_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417544342564536320'</td><td class=xl24 width=64 >Mon Dec 30 06:35:03 +0000 2013</td><td class=xl24 width=64 >Streetchildren fax their demands to Delhi's new CM Arvind Kejriwal  http://t.co/oesDtgluEK</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417543770054221825'</td><td class=xl24 width=64 >Mon Dec 30 06:32:47 +0000 2013</td><td class=xl24 width=64 >Karan Johar bonds with Kiran Rao.- http://t.co/ZdGEsdpspE :: http://t.co/SAww66aUNv</td><td class=xl24 width=64 >Filmfare</td><td class=xl24 width=64 >filmfare</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/413179285596151808/FAbXzK8E_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417543333968232448'</td><td class=xl24 width=64 >Mon Dec 30 06:31:03 +0000 2013</td><td class=xl24 width=64 >"To live a creative life, we must lose our fear of being wrong." - Joseph Chilton Pearce #BuddhaSays</td><td class=xl24 width=64 >Zee TV</td><td class=xl24 width=64 >ZeeTV</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000584611049/8be5c699eacc8154f8c6576f355eb39c_normal.png</td></tr><tr><td class=xl24 width=64 >'417543148911747073'</td><td class=xl24 width=64 >Mon Dec 30 06:30:18 +0000 2013</td><td class=xl24 width=64 >Ineligible members may lose Adarsh investment  http://t.co/BI5GZ4WHSs</td><td class=xl24 width=64 >Times of India</td><td class=xl24 width=64 >timesofindia</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/378800000305502066/87104f81cf9226166b63c98735bfca58_normal.jpeg</td></tr><tr><td class=xl24 width=64 >'417542920426639360'</td><td class=xl24 width=64 >Mon Dec 30 06:29:24 +0000 2013</td><td class=xl24 width=64 >“@ImAdityaNarayan: “@SunidhiChauhan5: Papa n me! http://t.co/JOpmTwoOTE” you look like Dushu's granddaughter after the haircut 😝”😤😝</td><td class=xl24 width=64 >Sunidhi Chauhan</td><td class=xl24 width=64 >SunidhiChauhan5</td><td class=xl24 width=64 >http://pbs.twimg.com/profile_images/415704006132891648/ryuqq2o9_normal.jpeg</td></tr></table></body></html>

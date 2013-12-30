@@ -1,5 +1,6 @@
 <?php
 session_start();
+//Twitter authentication required file
 require_once ('lib/twitteroauth/twitteroauth.php');
 require_once ('config.php');
 
@@ -25,11 +26,12 @@ $doc = new DOMDocument('1.0');
 // we want a nice output
 $doc -> formatOutput = true;
 
+// generate xml Tweets object
 $root = $doc -> createElement('Tweets');
 $root = $doc -> appendChild($root);
 
 foreach ($tweets as $line) {
-	// generate csv lines from the inner arrays
+	// generate xml Tweet object into Tweets root object
 	$title = $doc -> createElement('Tweet');
 	$title = $root -> appendChild($title);
 
@@ -67,14 +69,22 @@ foreach ($tweets as $line) {
 
 
  	header('Content-Description: File Transfer');
-    header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename='.basename($filename));
-    header('Content-Transfer-Encoding: binary');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
-    header('Content-Length: ' . filesize($filename));
-    ob_clean();
-    flush();
+// tell the browser it's going to be a octet-stream file
+header('Content-Type: application/octet-stream');
+// tell the browser we want to save it instead of displaying it
+header('Content-Disposition: attachment; filename=' . basename($filename));
+//tell the browser Content-Transfer-Encoding of file
+header('Content-Transfer-Encoding: binary');
+//tell the browser Expires
+header('Expires: 0');
+//tell the browser Cache-Control
+header('Cache-Control: Pragma');
+//tell the browser Cache-Control
+header('Pragma: public');
+// tell the browser file size
+header('Content-Length: ' . filesize($filename));
+ob_clean();
+flush();
+//save DomDocument and print it.
 	echo $doc -> saveXML() . "\n";
 ?>

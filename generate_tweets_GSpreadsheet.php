@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+//Twitter authentication required file
 require_once ('lib/twitteroauth/twitteroauth.php');
 require_once ('config.php');
 
@@ -21,51 +22,65 @@ $user_info = $twitteroauth -> get('account/verify_credentials');
 $tweets = $twitteroauth -> get("https://api.twitter.com/1.1/statuses/home_timeline.json?screen_name=" . $user_info -> screen_name . "&count=15&contributor_details=true");
 
 $filename = "download/export.csv";
-$delimiter=",";
+$delimiter = ",";
 
 // open raw memory as file so no temp files needed, you might run out of memory though
 $f = fopen($filename, 'w');
 
-fputcsv($f,array("id_str","created_at","text","name","screen_name","profile_image_url"), $delimiter);
+fputcsv($f, array("id_str", "created_at", "text", "name", "screen_name", "profile_image_url"), $delimiter);
 // loop over the input array
 foreach ($tweets as $line) {
 	// generate csv lines from the inner arrays
-	fputcsv($f, array("'".$line->id_str."'",$line->created_at,$line->text,$line->user->name,$line->user->screen_name,$line->user->profile_image_url), $delimiter);
+	fputcsv($f, array("'" . $line -> id_str . "'", $line -> created_at, $line -> text, $line -> user -> name, $line -> user -> screen_name, $line -> user -> profile_image_url), $delimiter);
 }
 fseek($f, 0);
 
+//Google  authentication required file
 require_once 'lib/google-api-php-client/src/Google_Client.php';
 require_once 'lib/google-api-php-client/src/contrib/Google_DriveService.php';
 
+//Create obj of google client
 $client = new Google_Client();
+//set ClientId for google authentication
 $client -> setClientId("828657041989-u131fg93ems3g5dtip9qfmj4vfi3j8kk.apps.googleusercontent.com");
+//set ClientSecret for google authentication
 $client -> setClientSecret('F64SW-3Gf0QkwbxufsBINJQC');
+//set RedirectUri for google authentication
 $client -> setRedirectUri('http://127.0.0.1/Rtcamp_Tweet/generate_tweets_GSpreadsheet.php');
-$client -> setScopes(array('https://www.googleapis.com/auth/drive', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/userinfo.profile'));
+//set Scopes for google authentication
+$client -> setScopes(array('https://www.googleapis.com/auth/drive'));
 $client -> setUseObjects(true);
 
+//Create obj of google DriveService for access drive
 $service = new Google_DriveService($client);
 
 try {
-	$client->authenticate();
-	$client->createAuthUrl();
+	//check google authentication
+	$client -> authenticate();
+	$client -> createAuthUrl();
+	//Create google drive file
 	$file = new Google_DriveFile();
-    $file->setTitle("tweet");
-    $file->setDescription("TweetyFly Tweet Download");
-    $file->setMimeType("text/csv");
-	if(isset($file->parentId)&&$file->parentId != null) {
-		 $parent = new ParentReference();
-	    $parent->setId($file->parentId);
-	    $file->setParents(array($parent));
+	//set Title for new created file
+	$file -> setTitle("tweet");
+	//set Description for new created file
+	$file -> setDescription("TweetyFly Tweet Download");
+	//set MimeType for new created file
+	$file -> setMimeType("application/vnd.google-apps.spreadsheet");
+	if (isset($file -> parentId) && $file -> parentId != null) {
+		//get parent reference from google
+		$parent = new ParentReference();
+		//set id for file parent
+		$parent -> setId($file -> parentId);
+		//set parent to the new creted file
+		$file -> setParents(array($parent));
 	}
+	//created object fot file content
 	$data = file_get_contents($filename);
-	
-    $createdFile = $service->files->insert($file, array(
-      'data' => $data,
-      'mimeType' => "application/vnd.google-apps.spreadsheet",
-      'convert' => true
-    ));
-	echo "File Was Successfully Created. File ID: ".$createdFile->id;
+
+	//insert the file into google drive
+	$createdFile = $service -> files -> insert($file, array('data' => $data, 'mimeType' => "application/vnd.google-apps.spreadsheet", 'convert' => true));
+	echo "File Was Successfully Created. File ID: " . $createdFile -> id;
+	//page redirect to the home page
 	header("location:timeline#home");
 } catch (Exception $ex) {
 	echo $ex;
