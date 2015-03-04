@@ -2,9 +2,9 @@
 
 /* configuration */
 
-define('CONSUMER_KEY', '5pLvB6xkD82O6leMz9adLQ');
-define('CONSUMER_SECRET', 'kgUrCHCdQpJzA7k5fScHsV4vFdWs9WZK39z5l8391U');
-define('OAUTH_CALLBACK', 'http://127.0.0.1/Rtcamp_Tweet/redirect.php'); //for localhost
+define('CONSUMER_KEY', '12IOhu1U7Sdj9DGExkhvqdoIe');
+define('CONSUMER_SECRET', ' Osw6SumO15DjpXfJXcBwkF8SFrzGTm1KaZoJZF5MftjsxN3mTp');
+define('OAUTH_CALLBACK', 'http://rtcamptweet-dips.rhcloud.com/redirect.php'); //for localhost
 
 
 ?>
